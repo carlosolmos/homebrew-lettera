@@ -3,11 +3,12 @@ class Lettera < Formula
 
   desc "Typewriter-inspired journaling TUI — forward-only writing, raw thinking preserved"
   homepage "https://github.com/carlosolmos/lettera"
-  url "https://files.pythonhosted.org/packages/source/l/lettera/lettera-0.1.3.tar.gz"
-  sha256 "122d2dd76c88a2d992faa020465833c2d93a89171b5c7e11b7fc01104fa24e16"
+  url "https://files.pythonhosted.org/packages/source/l/lettera/lettera-0.1.4.tar.gz"
+  sha256 "fabdfcf121316e2fae06735f9074fcace0e90855a3790cd9f3997976b47ced11"
   license "MIT"
 
   depends_on "python@3.11"
+  depends_on "libsodium"
 
   resource "textual" do
     url "https://files.pythonhosted.org/packages/source/t/textual/textual-0.89.1.tar.gz"
@@ -19,9 +20,9 @@ class Lettera < Formula
     sha256 "439594978a49a09530cff7ebc4b5c7103ef57baf48d5ea3184f21d9a2befa098"
   end
 
-  resource "cryptography" do
-    url "https://files.pythonhosted.org/packages/source/c/cryptography/cryptography-46.0.5.tar.gz"
-    sha256 "abace499247268e3757271b2f1e244b36b06f8515cf27c4d49468fc9eb16e93d"
+  resource "pynacl" do
+    url "https://files.pythonhosted.org/packages/source/P/PyNaCl/PyNaCl-1.5.0.tar.gz"
+    sha256 "8ac7448f09ab85811607bdd21ec2464495ac8b7c66d146bf545b0f08fb9220ba"
   end
 
   resource "cffi" do
