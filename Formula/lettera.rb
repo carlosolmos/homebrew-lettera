@@ -3,8 +3,8 @@ class Lettera < Formula
 
   desc "Typewriter-inspired journaling TUI — forward-only writing, raw thinking preserved"
   homepage "https://github.com/carlosolmos/lettera"
-  url "https://files.pythonhosted.org/packages/source/l/lettera/lettera-0.1.0.tar.gz"
-  sha256 "69f07615a2a81eebea1544d36f440af35dd87b46abc5446d99d84b36559fe0a4"
+  url "https://files.pythonhosted.org/packages/source/l/lettera/lettera-0.1.3.tar.gz"
+  sha256 "122d2dd76c88a2d992faa020465833c2d93a89171b5c7e11b7fc01104fa24e16"
   license "MIT"
 
   depends_on "python@3.11"
@@ -17,6 +17,21 @@ class Lettera < Formula
   resource "rich" do
     url "https://files.pythonhosted.org/packages/source/r/rich/rich-13.9.4.tar.gz"
     sha256 "439594978a49a09530cff7ebc4b5c7103ef57baf48d5ea3184f21d9a2befa098"
+  end
+
+  resource "cryptography" do
+    url "https://files.pythonhosted.org/packages/source/c/cryptography/cryptography-46.0.5.tar.gz"
+    sha256 "abace499247268e3757271b2f1e244b36b06f8515cf27c4d49468fc9eb16e93d"
+  end
+
+  resource "cffi" do
+    url "https://files.pythonhosted.org/packages/source/c/cffi/cffi-1.17.1.tar.gz"
+    sha256 "1c39c6016c32bc48dd54561950ebd6836e1670f2ae46128f67cf49e789c52824"
+  end
+
+  resource "pycparser" do
+    url "https://files.pythonhosted.org/packages/source/p/pycparser/pycparser-2.23.tar.gz"
+    sha256 "78816d4f24add8f10a06d6f05b4d424ad9e96cfebf68a4ddc99c65c0720d00c2"
   end
 
   resource "aiofiles" do
