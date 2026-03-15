@@ -3,8 +3,8 @@ class Lettera < Formula
 
   desc "Typewriter-inspired journaling TUI — forward-only writing, raw thinking preserved"
   homepage "https://github.com/carlosolmos/lettera"
-  url "https://files.pythonhosted.org/packages/source/l/lettera/lettera-0.1.5.tar.gz"
-  sha256 "3fcad508b27e9be45251318b293fce52d32cb91d596da6969d3ed2ccd289c54d"
+  url "https://files.pythonhosted.org/packages/source/l/lettera/lettera-0.2.0.tar.gz"
+  sha256 "a62f870af1dbbc2d5045ed1b692c38042f7e5a1bbfb7ccb4129d2873f5618fc6"
   license "MIT"
 
   depends_on "python@3.11"
